@@ -1,0 +1,420 @@
+<!-- Main colour palette
+Dark blue - #3E6990
+Lighter blue - #93B7BE
+White - #F1FFFA
+Dark grey - #293132
+Orange - #FA8334
+-->
+<!doctype html>
+<html>
+<head>
+    <title>Gvozden Despotovski - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Gvozden Despotovski - Front and back-end developer">
+    <meta name="keywords" content="gvozden despotovski, portfolio, developer, front end, back end, web developer">
+    <meta name="author" content="Gvozden Despotovski">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/stylesheet.css"><!--Local stylesheet-->
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jq341.js"></script> <!--Jquery 3.4.1-->
+    <script src="js/bootstrap.bundle.js"></script><!--Bootstrap 4-->
+    <script src="js/p5.js"></script><!--P5 Library-->
+
+    <script src="js/background.js"></script>
+    <script src="https://kit.fontawesome.com/a262efb48f.js" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap&subset=latin-ext" rel="stylesheet"><!--Roboto-->
+
+</head>
+<body ondblclick="if(activateStrokes == false){ activateStrokes=true} else activateStrokes = false">
+<p id="portfolio-more" class="small text-muted"><i id="portfolio-more-icon" class="fas fa-angle-double-down fa-2x"></i></p>
+<div class="containter-fluid w-100 h-100">
+    <header class="containter d-flex flex-wrap align-items-center w-100 p-5 h-100">
+        <div id="header-row" class='row pt-5 pl-5 pr-5 pb-3 m-0 w-100 shadow'>
+            <div id="portfolio-main w-100" class="container-fluid">
+                <div class="row w-100">
+                <div class="col-md-1 w-100">
+                <img id="profile-picture" src="images/profile-picture.png" class="img-fluid rounded-circle portfolio-image">
+                </div>
+                <div class="col-md-5 w-100">
+                    <div class="portfolio-title">
+                        Gvozden Despotovski
+                        <div class="portfolio-subtitle text-muted"><small>Front and back-end developer</small><br/><small><i class="fas fa-map-marker-alt"></i> Based in Pančevo, Serbia</small></div>
+                        <div class="portfolio-skills">
+                        <span id="html5-badge" class="badge badge-dark skills-badge">HTML5</span>
+                        <span id="css-badge" class="badge badge-dark skills-badge">CSS</span>
+                        <span id="js-badge"class="badge badge-dark skills-badge">JavaScript</span>
+                        <span id="php-badge"class="badge badge-dark skills-badge">PHP</span>
+                        <span id="node-badge"class="badge badge-secondary skills-badge">NODE.js</span>
+                        <span id="p5-badge" class="badge badge-secondary skills-badge">p5.js</span>
+                        <p class="small text-muted" style="font-weight:300"><i>Hover over the badge to see the skill level</i></p>
+                        </div>
+                        <div class="progress mt-2" style="height:1px">
+                            <div class="progress-bar" style="background-color:#FA8334" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="portfolio-links">
+                            <small>
+                            <a href="https://www.linkedin.com/in/gvozden-despotovski/" target="_blank" class="p-1">LinkedIn</a>
+                            <a href="https://www.instagram.com/ketchupbottlefart/" target="_blank" class="p-1">Instagram</a>
+                            <a href="#" onClick="copyEmail()" id="copyMail" class="p-1" data-toggle="tooltip" data-value="despotovski@gvozden.rs" data-placement="auto" title="Click to copy e-mail to clipboard.">E-mail</a>
+                            <a href="https://www.freelancer.com/u/gvozdeniii" target="_blank" class="p-1">Freelancer</a>
+                            <a href="https://github.com/dsheedes" target="_blank" class="p-1">GitHub</a>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 border-left">
+                    <dl id="short-bio" class="row list-unstyled small">
+                        <dt class="col-sm-1 text-center"><i class="fas fa-graduation-cap fa-lg text-muted"></dt><dd class="col-sm-11"></i>Finished <i>"Nikola Tesla"</i> High school, <b>Network Administrator</b></dd>
+                        <dt class="col-sm-1 text-center"><i class="fas fa-university fa-lg text-muted"></i></dt><dd class="col-sm-11">Student at <i>Faculty of Organizational Sciences</i>, <b>Informational systems and Technologies</b></dd>
+                        <dt class="col-sm-1 text-center"><i class="fas fa-camera-retro fa-lg text-muted"></i></dt><dd class="col-sm-11">Photography hobbyist</dd>
+                        <dt class="col-sm-1 text-center"><i class="fas fa-hands-helping fa-lg text-muted"></i></dt><dd class="col-sm-11">Volunteer @ <a href="http://okoorg.rs/">OKO</a></dd>
+                        <dt class="col-sm-1 text-center"><i class="fas fa-code fa-lg text-muted"></i></dt><dd class="col-sm-11">Freelancing at Freelancer.com</dd>
+                        <dt class="mt-1 col-sm-12"><button class="btn btn-success btn-sm p-1 w-25 float-right" data-toggle="modal" data-target="#exampleModalCenter">Avaliable for hire!</button></dt>
+                    </dl>
+                </div> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pt-3 pb-3">
+        <div class="row w-100 p-5 m-0">
+            <div class="col-md-6 p-0">
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <h6 class="card-title">Current projects</h6>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <ul class="list-unstyled pl-5">
+                                    <li>
+                                        <b>Portfolio website <small class="text-muted">Ongoing</small></b><br/>
+                                        <div class="progress w-50">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50% Completed</div>
+                                        </div>
+                                        <span class="badge badge-primary">HTML5</span>
+                                        <span class="badge badge-primary">CSS</span>
+                                        <span class="badge badge-primary">JavaScript</span>
+                                        <span class="badge badge-primary">PHP</span>
+                                        <span class="badge badge-primary">MySql</span>
+                                        <span class="badge badge-primary">p5.js</span>
+                                        <ul>
+                                            <li>
+                                                Front page design and implementation
+                                            </li>
+                                            <li>
+                                                Behind the scenes php and databases
+                                            </li>
+                                            <li>
+                                                Interactive background in p5.js
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-8">
+                                <ul class="list-unstyled pl-5">
+                                    <li>
+                                        <b>WiFi Heatmap <small class="text-muted">Ongoing</small></b><br/>
+                                        <div class="progress w-50">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85% Completed</div>
+                                        </div>
+                                        <span class="badge badge-primary">HTML5</span>
+                                        <span class="badge badge-primary">CSS</span>
+                                        <span class="badge badge-primary">JavaScript</span>
+                                        <span class="badge badge-primary">Python</span>
+                                        <ul>
+                                            <li>
+                                                Front page design and implementation
+                                            </li>
+                                            <li>
+                                                Data gathering via Raspberry Pi and mobile phone
+                                            </li>
+                                            <li>
+                                                Data processing with python
+                                            </li>
+                                            <li>
+                                                Data presentation using Google Maps API
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div class="card rounded-0 border-left-0">
+                    <div class="card-body">
+                    <h6 class="card-title">Previous projects</h6>
+                            <hr/>
+                            <div class="row mt-3">
+                            <div class="col-md-8">
+                                <ul class="list-unstyled pl-5">
+                                    <li>
+                                        <b>Farbara Colorit website <small class="text-muted">30. March 2019.</small></b><br/>
+                                        <div class="progress w-50">
+                                            <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100% Completed</div>
+                                        </div>
+                                        <span class="badge badge-primary">HTML5</span>
+                                        <span class="badge badge-primary">CSS</span>
+                                        <span class="badge badge-primary">JavaScript</span>
+                                        <span class="badge badge-primary">PHP</span>
+                                        <span class="badge badge-primary">MySql</span>
+                                        <ul>
+                                            <li>
+                                                Front page design and implementation
+                                            </li>
+                                            <li>
+                                                Behind the scenes php and databases
+                                            </li>
+                                            <li>
+                                                Administrator panel
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <img src="images/farbara-colorit.jpg" alt="Farbara Colorit Pancevo" class="img-fluid img-thumbnail" />
+                                <small class="text-muted">Click to visit.</small>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+        
+    </main>
+</div>
+
+<div id="dyn-bg"></div>
+<!--Contact modal-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+          <div class="row">
+              <div class="col">
+              <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="contact-sender-email" aria-describedby="email" placeholder="Your e-mail">
+            <small id="emailHelp" class="form-text text-muted">So I know where to respond :)</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Subject</label>
+            <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
+            <small id="emailHelp" class="form-text text-muted">Make it precise and to the point!</small>
+        </div>
+        <div class="form-group">
+            <label for="contact-message">Message:</label>
+            <textarea class="form-control" id="contact-message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+        </form>
+              </div>
+              <div class="col-md-1 align-self-center text-center">
+                  <small class="text-muted"><i>OR</i></small>
+              </div>
+              <div class="col-md-5 align-self-center text-center">
+                  <i class="fas fa-envelope fa-3x"></i>
+                  <p class="small">You can contact me directly at:</p>
+                  <p id="text-select" class="lead">despotovski@gvozden.rs</p>
+              </div>
+          </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="galleryModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="gallery-body" class="modal-body">
+        <img src='images/search-engine-gallery/index.jpg' class="img-fluid"/>
+        <img src='images/search-engine-gallery/search.jpg' class="img-fluid" />
+        <img src='images/search-engine-gallery/model.jpg' class="img-fluid"/>
+        <img src='images/search-engine-gallery/realestate.jpg' class="img-fluid"/>
+        <img src='images/search-engine-gallery/shop.jpg' class="img-fluid"/>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/gallery.js"></script>
+<script>
+$("#gallery-body").gallery({
+    loop:true,
+    thumbnails:true,
+});
+var stopFlash = false;
+$("#portfolio-more").click(function(){
+    $('html, body').animate({
+        scrollTop: $("main").offset().top
+    }, 1000);
+});
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+function copyEmail(){
+    var tempInput = document.createElement("input");
+    tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+    tempInput.value = "despotovski@gvozden.rs";
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+
+    $("#copyMail").attr("data-original-title", "Copied! despotovski@gvozden.rs");
+    $("#copyMail").tooltip('hide');
+    $("#copyMail").tooltip('show');
+
+    setTimeout(function(){
+        $("#copyMail").attr("data-original-title", "Click to copy e-mail to clipboard.")
+    }, 5000)
+}
+
+$("#html5-badge").hover(function(){
+    $(".progress-bar").animate({
+        width:"100%"
+    },100);
+}, function(){
+    $(".progress-bar").animate({
+        width:0
+    },50);
+});
+$("#css-badge").hover(function(){
+    $(".progress-bar").animate({
+        width:"100%"
+    },100);
+}, function(){
+    $(".progress-bar").animate({
+        width:0
+    },50);
+});
+$("#js-badge").hover(function(){
+    $(".progress-bar").animate({
+        width:"100%"
+    },100);
+}, function(){
+    $(".progress-bar").animate({
+        width:0
+    },50);
+});
+$("#php-badge").hover(function(){
+    $(".progress-bar").animate({
+        width:"75%"
+    },100);
+}, function(){
+    $(".progress-bar").animate({
+        width:0
+    },50);
+});
+$("#node-badge").hover(function(){
+    $(".progress-bar").animate({
+        width:"20%"
+    },100);
+}, function(){
+    $(".progress-bar").animate({
+        width:0
+    },50);
+});
+$("#p5-badge").hover(function(){
+    $(".progress-bar").animate({
+        width:"15%"
+    },100);
+
+}, function(){
+    $(".progress-bar").animate({
+        width:0
+    },50);
+});
+//Profile picture candy
+$("#profile-picture").click(function(){
+    if($(this).css("transform") == 'none'){
+        $(this).css("transform", "rotate(360deg)");
+    } else {
+        $(this).css("transform", "");
+        }
+});
+
+$("#portfolio-more").hover(function(){
+    stopFlash = true;
+}, function(){
+    stopFlash = false;
+    flash($("#portfolio-more"));
+})
+function flash(object){
+    if(stopFlash == false){
+        if(object.css("opacity") == 1){
+        object.animate({
+            opacity:0.3
+        }, 1000, function(){
+            flash(object);
+        })
+    } else {
+        object.animate({
+            opacity:1
+        }, 1000, function(){
+            flash(object);
+        })
+    }
+    } else object.css("opacity", 1);
+}
+
+flash($("#portfolio-more"));
+
+</script>
+</body>
+</html>
+<!--            <div class="list-group list-group-flush w-100 border-top border-right border-bottom">
+                <div class="list-group-item list-group-item-action p-3"><h6><b>More about me:</b></h6></div>
+  <a href="#frontend" class="list-group-item list-group-item-action p-3" data-toggle="collapse" role="button" ><h6>Front-end experience <i class="fas fa-sort-down float-right"></i></h6>
+            <div class="container-fluid collapse mt-3" id="frontend">
+                <p>
+                    Programming started to interest me in primary school, when I was about 12 or 13. 
+                    <br/>I did some research and found out that HTML should be simple enough to start with even though it isn't a serious language. 
+                    <br/>A couple of tutorials later and numerous pages of w3schools read, I started creating my own websites. 
+                    
+                    Since then I've picked up skills such as HTML5, CSS, JavaScript, jQuery and Bootstrap, and currently I'm interested in Angular.<br/><br/> I've done a lot of websites for personal use, but also websites for customers.<br/><br/>I've studied web design in high school and on vocational studies, and managed to introduce myself to more standardised practices of web design and development, which helped me along the way greatly. 
+                    <br/><br/>In case You are interested in hiring me, please let me know! <div class="btn btn-success btn-sm">Currently avaliable for work! <i class="fas fa-briefcase"></i></div></p>
+            </div>
+
+  </a>
+  <a href="#backend" class="list-group-item list-group-item-action p-3" data-toggle="collapse" role="button"><h6>Back-end development<i class="fas fa-sort-down float-right"></i></h6>
+        <div class="container-fluid collapse mt-3" id="backend">
+                <p>Soon after getting into front-end the obvious decision for me was doing back-end. It was necessary for my personal projects, as well as showing off to primary school friends.<br/>
+                I just had to learn how to register users, create logins and logouts, save data, process data, etc. My language of choice was, of course, PHP. It was definitely daunting at first, but over time i began to understand how it works.<br/>
+                <br/>My first serious project was creating a website for my class where we could share notes, photos, chat, and make posts. Sort of a local social network. The website was not a great success with my class, since my 13 year old classmates didn't really understand it, although i did manage to get it up and running.<br/>
+                After that project I indulged in making an URL shortener, which had about 4-5 revisions and redesigns, and it made me some first internet-money.<br/><br/>
+                When I got some courage, I signed up for Freelancer and things started to get a bit more serious.
+                
+                <br/><br/>
+                In the meantime I played around with node.js, making discord bots, website scrapers and chat services. It amazed me how powerful it was and I am still working on improving my node.js skills.
+                <br/><br/>
+                If You'd like to hire me for some back-end development or problem solving, please contact me!.
+                <div class="btn btn-danger btn-sm">Not avaliable right now! <i class="fas fa-briefcase"></i></div>
+                </p>
+            </div>
+            </a>
+</div>-->

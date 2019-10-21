@@ -1,0 +1,92 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    font-family:'Roboto', sans-serif;
+    background-color:#fefefe;
+}
+
+.portfolio-title{
+    font-weight:700;
+}
+.portfolio-subtitle{
+    font-weight:400;
+}
+.portfolio-image{
+
+}
+
+#dyn-bg{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    z-index:-9999;
+}
+#header-row{
+    background-color:rgba(255, 255, 255, 1)
+}
+#p5info{
+    position:fixed;
+    font-weight:300;
+    bottom:0;
+    left:-10
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#see-more{
+    color: #F1FFFA;
+}
+
+.progress{
+    flex: 0 0 100%
+}
+.skills-badge{
+    cursor:pointer
+}
+#profile-picture{
+    cursor:pointer;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.shadow-hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .shadow-hover:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+#portfolio-more{
+    position:absolute;
+    top:85%;
+    left:calc(50% - 16px);
+}
+#portfolio-more-icon{
+    color: #F1FFFA;
+    opacity:0.5;
+    cursor:pointer;
+}
+#portfolio-more-icon:hover{
+    opacity:1;
+    transition-duration: .2s;
+}
+#gallery-body{
+    width:100%;
+    height:70%;
+    text-align:center;
+}
+#gallery-body img{
+    width:100%;
+}
