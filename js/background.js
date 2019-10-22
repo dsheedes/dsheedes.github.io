@@ -43,9 +43,9 @@ function setup() {
 }
 
 function windowResized() {
-    cwidth = document.body.clientWidth;
-    cheight = document.body.clientHeight;
-    resizeCanvas(document.body.clientWidth, document.body.clientHeight);
+    cwidth = $("#main-wrapper").width();
+    cheight = $("#main-wrapper").height();
+    resizeCanvas(cwidth, cheight);
   }
 function draw() {
   background('#293132');
