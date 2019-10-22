@@ -41,7 +41,8 @@ function setup() {
   }
   
 }
-
+  var framerateCounter = 0;
+  var interval = 0;
 function windowResized() {
     cwidth = $("#main-wrapper").width();
     cheight = $("#main-wrapper").height();
@@ -50,6 +51,23 @@ function windowResized() {
 function draw() {
   background('#293132');
   noStroke();
+
+//FPS checker and breaker.
+//If fps less than 24, stop looping
+  framerateCounter += frameRate();
+  interval++;
+
+  if(interval == 60){
+    if(framerateCounter / 60 < 24){
+      noLoop();
+      interval = 0;
+      framerateCounter = 0;
+    } else {
+      console.log("fps fine");
+      interval = 0;
+      framerateCounter = 0;
+      }
+  }
 
   for(i = 0; i<=dots.length-1; i++){
     
