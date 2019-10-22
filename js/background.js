@@ -52,6 +52,21 @@ function draw() {
   background('#293132');
   noStroke();
 
+
+//Performance boosting. Will not animate background when not in viewport. Pauses execution.
+  if($("#dyn-bg").is(":in-viewport")){ //If in viewport
+    loop();
+  } else { //If not
+    noLoop();
+
+    var waiter = setInterval(function(){ //Create a listener in case background returns to viewport
+      if($("#dyn-bg").is(":in-viewport")){ 
+        loop();
+
+        clearInterval(waiter);
+      } 
+    }, 1000);
+  }
 //FPS checker and breaker.
 //If fps less than 24, stop looping
   framerateCounter += frameRate();

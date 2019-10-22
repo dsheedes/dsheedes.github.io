@@ -260,17 +260,8 @@ Orange - #FA8334
   </div>
 </div>
 <script src="js/gallery.js"></script>
-<script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
+<script type="text/javascript" src="js/isInViewport.min.js"></script>
 <script>
-$("#dyn-bg").onScreen({
-    container:window,
-    doIn: function(){
-        loop();
-    },
-    doOut: function (){
-        noLoop();
-    }
-});
 $("#gallery-body").gallery({
     loop:true,
     thumbnails:true,
